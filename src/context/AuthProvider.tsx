@@ -71,8 +71,8 @@ export const AuthProvider = ({ children }: Props) => {
 
   // ✅ Helper: Handle successful login/register
   const handleAuthSuccess = (data: AuthResponse) => {
-    const { id, fullName, email, role, token } = data;
-    const userObj: User = { id, fullName, email, role };
+    const { _id, fullName, email, role, token } = data;
+    const userObj: User = { _id, fullName, email, role };
 
     setUser(userObj);
     setToken(token);

@@ -74,7 +74,7 @@ const Dashboard = () => {
                   <p className="text-gray-600">Date: {new Date(b.date).toLocaleDateString()}</p>
                   <p className="text-gray-600">Status: {b.status}</p>
                 </div>
-                {b.status === "booked" && (
+                {b.status === "pending" && (
                   <Button variant="danger" onClick={() => navigate(`/bookings`)}>
                     Cancel
                   </Button>
